@@ -370,3 +370,72 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 6169)
 
 
+Started GET "/posts" for ::1 at 2020-09-13 00:00:59 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1044)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 192)
+Completed 200 OK in 31ms (Views: 19.0ms | ActiveRecord: 2.2ms | Allocations: 9367)
+
+
+Started GET "/posts" for ::1 at 2020-09-13 00:01:01 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 656)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 59)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.4ms | Allocations: 4665)
+
+
+Started GET "/posts/new" for ::1 at 2020-09-13 00:01:06 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.5ms | Allocations: 1303)
+  Rendered posts/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1613)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 37ms (Views: 22.5ms | ActiveRecord: 4.5ms | Allocations: 8936)
+
+
+Started POST "/posts" for ::1 at 2020-09-13 00:01:32 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"PvZAGO/SC0k02merwMbHbiwgtEAegho9OOrZwnFAmK+oineBqgKH4D5LvfGOWOs4+hRk1RbIFsIvP5vte045uA==", "post"=>{"title"=>"新規投稿の検証", "content"=>"投稿した後どうなるか"}, "commit"=>"投稿"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mPost Create (41.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "新規投稿の検証"], ["content", "投稿した後どうなるか"], ["created_at", "2020-09-12 15:01:32.258724"], ["updated_at", "2020-09-12 15:01:32.258724"]]
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 51ms (ActiveRecord: 42.8ms | Allocations: 3095)
+
+
+Started GET "/posts/1" for ::1 at 2020-09-13 00:01:32 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+Completed 200 OK in 35ms (Views: 7.8ms | ActiveRecord: 1.3ms | Allocations: 5311)
+
+
+Started GET "/posts" for ::1 at 2020-09-13 00:01:37 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 50)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.5ms | Allocations: 4794)
+
+
