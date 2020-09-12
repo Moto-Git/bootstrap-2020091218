@@ -207,3 +207,166 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 2.1ms | Allocations: 7529)
 
 
+Started GET "/" for ::1 at 2020-09-12 23:46:23 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1044)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 2.3ms | Allocations: 10400)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actiontext-6.0.3.3/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actionmailbox-6.0.3.3/app/views"
+):
+    12:     <%# <%= link_to "投稿一覧", posts_path %>  
+    13:     <%# <%= link_to "新規投稿", new_post_path %> 
+    14: 
+    15:     <%= render "layouts/header" %> 
+    16:     <%= render "layouts/flash" %>
+    17:   
+    18:     <hr>
+  
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2020-09-12 23:50:11 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 656)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.4ms | Allocations: 6256)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actiontext-6.0.3.3/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actionmailbox-6.0.3.3/app/views"
+):
+    12:     <%# <%= link_to "投稿一覧", posts_path %>  
+    13:     <%# <%= link_to "新規投稿", new_post_path %> 
+    14: 
+    15:     <%= render "layouts/header" %> 
+    16:     <%= render "layouts/flash" %>
+    17:   
+    18:     <hr>
+  
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2020-09-12 23:50:51 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms | Allocations: 6784)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actiontext-6.0.3.3/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actionmailbox-6.0.3.3/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:   
+    12:     <%= render "layouts/header" %>
+    13:     <!-- ***** 次を追加 ***** -->
+    14:     <%= render "layouts/flash" %>
+    15:   
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2020-09-12 23:52:42 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.7ms | Allocations: 6782)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actiontext-6.0.3.3/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actionmailbox-6.0.3.3/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:   
+    12:     <%= render "layouts/header" %>
+    13:     <!-- ***** 次を追加 ***** -->
+    14:     <%= render "layouts/flash" %>
+    15:   
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2020-09-12 23:55:11 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms | Allocations: 6787)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actiontext-6.0.3.3/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actionmailbox-6.0.3.3/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:   
+    12:     <%= render "layouts/header" %>
+    13:     <!-- ***** 次を追加 ***** -->
+    14:     <%= render "layouts/flash" %>
+    15:   
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2020-09-12 23:55:27 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1044)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.1ms | Allocations: 10366)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actiontext-6.0.3.3/app/views"
+  * "/Users/unknown01/Desktop/bootstrap-2020091218-2/vendor/bundle/ruby/2.6.0/gems/actionmailbox-6.0.3.3/app/views"
+):
+     9:   </head>
+    10:   <body>
+    11:   
+    12:     <%= render "layouts/header" %>
+    13:     <!-- ***** 次を追加 ***** -->
+    14:     <%= render "layouts/flash" %>
+    15:   
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2020-09-12 23:56:59 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 885)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 192)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 6169)
+
+
