@@ -1,0 +1,58 @@
+:root {
+  --side: 6vw;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 7.32vw;
+  }
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  line-height: 1.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  padding: 6.8rem var(--side);
+}
+
+@media (min-width: 768px) {
+  .container.menu,
+  .container.news {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+// 変数
+// scss
+$cPrimary: #ff953a;
+$cDarkgray: #222;
+$cMidgray: #414141;
+$cGray: #888;
+$cWhite: #fff;
+
+// css
+// :root {
+//   --primary: #ff953a;
+//   --darkgray: #222;
+//   --midgray: #414141;
+//   --gray: #888;
+//   --white: #fff;
+// }
+
+// all left right margin
+:root {
+  --side : 6vw;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 7.32vw;
+  }
+}
+
+
+// Size Base 1rem = 10px
+// 62.5% = 10px
+:root {
+  font-size: 62.5%;
+}
+
+// Text Base
+body {
+  // color: $cWhite;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  line-height: 1.8;
+
+
+}
+
+// Image Setting
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+// link Setting
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Button Setting
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Container
+.container {
+  padding: 6.8rem var(--side);
+}
+
+@media (min-width: 768px) {
+
+  .container.menu,
+  .container.news {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
